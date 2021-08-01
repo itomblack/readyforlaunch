@@ -2,7 +2,7 @@
   "name": "ContentfulBlog",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://github.com/itomblack/readyforlaunch",
+  "homepage": "https://github.com/itomblack/readyforlaunch/build",
   "repository": {},
   "devDependencies": {
     "prettier": "^1.17.1",
