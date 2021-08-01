@@ -4,7 +4,7 @@ import Blog from "./Blog";
 import BlogPost from "./BlogPost";
 import Home from "./Home";
 import {
-  MemoryRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
