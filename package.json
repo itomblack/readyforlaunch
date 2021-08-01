@@ -2,7 +2,7 @@
   "name": "ContentfulBlog",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://github.com/itomblack/readyforlaunch/build",
+  "homepage": "https://github.com/itomblack/readyforlaunch",
   "repository": {},
   "devDependencies": {
     "prettier": "^1.17.1",
@@ -29,8 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "netlify deploy"
+    "eject": "react-scripts eject"
   },
   "prettier": {
     "trailingComma": "all"
