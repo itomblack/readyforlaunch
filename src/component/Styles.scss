@@ -11,6 +11,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.button {
+  margin: 16px;
+  display: inline-block;
+  padding: 16px 32px;
+  background: #2bfcba;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
 /* Blog Post */
 .blogpost-preview {
   max-width: 650px;
@@ -19,4 +28,9 @@ body {
   box-shadow: 0px 3px 15px 8px rgba(0, 0, 0, 0.15);
   border-radius: 36px;
   margin-bottom: 32px;
+}
+
+/* Podcast Show */
+.podcast-player {
+  margin: 64px 0;
 }

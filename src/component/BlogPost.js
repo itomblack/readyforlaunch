@@ -57,7 +57,7 @@ class BlogPost extends React.Component {
           sameElse: 'MMM Do YYYY'
         })}
       </p>
-      {this.state.featuredImage && <img className='featuredImage' src={'http:'+ this.state.featuredImage.fields.file.url + '?w=300&h=300'} alt={this.state.title} title={this.state.title}/>}
+      {this.state.featuredImage && <img src={'http:'+ this.state.featuredImage.fields.file.url + '?w=300&h=300'} alt={this.state.title} title={this.state.title}/>}
       <h1>{this.state.title}</h1>
       <Markdown source={this.state.content} />
     </>

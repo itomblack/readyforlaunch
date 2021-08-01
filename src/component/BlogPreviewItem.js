@@ -15,16 +15,16 @@ const BlogPreviewItem = (props) => {
             props.content.split(" ").splice(0,maxCharInPreview).join(" ").concat('...')
           }
         />
-        <div className="level">
-          <div className="level-left">
+        <div className="">
+          <div className="">
             <Link
-                className="level-item button is-small is-link is-outlined"
+                className="button"
                 to={{ pathname: `${match.url}/${props.path}`, ...props }}>
               Read More
             </Link>
           </div>
-        <div className="level-right">
-          <p className="level-item has-text-link is-size-7">
+        <div className="">
+          <p className="">
           {moment(props.date).calendar(null, {
               sameDay: '[Today]',
               lastDay: '[Yesterday]',
