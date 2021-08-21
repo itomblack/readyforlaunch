@@ -9,12 +9,14 @@ const CardBlog = (props) => {
   return (
     <>
       <div className='blogpost-preview'>
-        <h2>{props.title}</h2>
-        <Link
-            className="icon-button"
-            to={{ pathname: `${match.url}/${props.path}`, ...props }}>
-          <i className="icono-arrow1-left"></i>
-        </Link>
+        <div className="blogpost-preview-content">
+          <h2>{props.title}</h2>
+          <Link
+              className="icon-button"
+              to={{ pathname: `${match.url}/${props.path}`, ...props }}>
+            <i className="icono-arrow1-left"></i>
+          </Link>
+        </div>
       </div>
       
     </>
