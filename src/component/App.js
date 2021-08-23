@@ -9,11 +9,15 @@ import {
   Route
 } from "react-router-dom";
 
+import Header from "./Header";
+
 export default class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
+      
       <Router>
+      <Header/> 
         <Switch>
             <Route path="/blog" exact component={Blog} />
             <Route path='/blog/:blogPost' component={BlogPost} />

@@ -2,7 +2,6 @@ import React from 'react'
 // import BlogPreviewItem from './BlogPreviewItem'
 import CardBlog from './CardBlog'
 import ContentfulUtil from '../utils/ContentfulUtil'
-import { Link } from 'react-router-dom';
 
 class Blog extends React.Component {
   state = {
@@ -22,8 +21,6 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-        <Link to="home">Go to home</Link>
-        <h1>Blog</h1>
         <div className="podcast-player">
           <iframe src="https://open.spotify.com/embed/show/0FX2hELh5i2jYqGmBJkRhg?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>

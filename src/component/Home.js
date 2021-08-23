@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 class Home extends React.PureComponent {
   render() {
     return (
       <>
-        <h1>Welcome Home!</h1>
-        <Link to="blog">Go to blog</Link>
         <div className="podcast-player">
           <iframe src="https://open.spotify.com/embed/show/0FX2hELh5i2jYqGmBJkRhg?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
