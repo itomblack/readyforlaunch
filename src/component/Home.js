@@ -1,20 +1,32 @@
 import React from 'react';
+import HomeIntro from "./HomeIntro";
+import HostIntro from "./HostIntro";
+import ContentfulUtil from '../utils/ContentfulUtil'
+import './Styles-Home.scss';
 
-class Home extends React.PureComponent {
+
+class Home extends React.PureComponent { 
+
+
   render() {
     return (
       <>
+      <div className='body-wrap'>
+        {/* Podcast Show */}
         <div className="podcast-player">
           <iframe src="https://open.spotify.com/embed/show/0FX2hELh5i2jYqGmBJkRhg?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
-       <div className="podcast-links">
-         <a className='button' target="_blank" href="https://open.spotify.com/show/0FX2hELh5i2jYqGmBJkRhg?si=QZUE2RljRCyCd7-6f9mmkw&dl_branch=1">
-           Spotify
-          </a>
-         <a className='button' target="_blank" href="https://podcasts.apple.com/ca/podcast/ready-for-launch/id1561648024">
-           Apple Podcasts
-           </a>
-       </div>
+
+      {/* Intro Block */}
+      <HomeIntro/> 
+
+      {/* Will need to make a new component and import it */}
+      <HostIntro/> 
+
+      {/* Host Block */}
+
+
+      </div>
         
       </>
     );

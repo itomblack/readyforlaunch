@@ -10,6 +10,7 @@ class Blog extends React.Component {
 
   componentDidMount() {
     ContentfulUtil.fetchAllBlogPosts().then(this.setPosts);
+    console.log(this)
   }
 
   setPosts = response => {
@@ -20,7 +21,7 @@ class Blog extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='body-wrap'>
         <div className="podcast-player">
           <iframe src="https://open.spotify.com/embed/show/0FX2hELh5i2jYqGmBJkRhg?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>

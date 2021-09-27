@@ -1,0 +1,23 @@
+.Blog-post {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 128px;
+  text-align: left;
+
+  h1 {
+    margin-bottom: 32px;
+  }
+
+  .img-wrap {
+    width: 100%;
+    height: 360px;
+    border-radius: 32px;
+    overflow: hidden;
+    display: block;
+    img {
+      width: 100%;
+      // height: 100%;
+    }
+  }
+}

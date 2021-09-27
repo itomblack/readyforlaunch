@@ -8,13 +8,20 @@ class ContentfulUtil {
   
   static fetchAllBlogPosts = () => ContentfulUtil.client.getEntries({
       content_type: 'blogpost',
-      order: '-sys.createdAt'
+      order: 'sys.createdAt'
     })
 
   static fetchPostByPathName = (pathName) => ContentfulUtil.client.getEntries({
       content_type: 'blogpost',
       'fields.path[in]': pathName
     })  
+
+    // TESTING BY ID
+    // static fetchSectionByID = (postID) => ContentfulUtil.client.getEntry(postID)
+    static fetchSectionByID = (pathName) => ContentfulUtil.client.getEntries({
+      'sys.id': pathName
+    }) 
+    
 }
 
 export default ContentfulUtil;

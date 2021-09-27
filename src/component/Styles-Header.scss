@@ -1,0 +1,26 @@
+.header-wrap {
+  padding: 36px 64px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 650px) {
+    padding: 16px 16px;
+  }
+
+  img {
+    line-height: 0;
+    @media screen and (max-width: 650px) {
+      width: 80%;
+    }
+  }
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #6d67ff;
+}

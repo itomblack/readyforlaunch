@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import moment from 'moment'
 import * as Markdown from 'react-markdown'
 import ContentfulUtil from '../utils/ContentfulUtil'
+import './Styles-Blog-Post.scss';
 
 class BlogPost extends React.Component {
   state = {
@@ -48,18 +48,19 @@ class BlogPost extends React.Component {
 
   renderBlogPost = () => (
     <>
-      <Link to="/blog">Back to Blog</Link>
-      <p>
-        {moment(this.state.date).calendar(null, {
-          sameDay: '[Today]',
-          lastDay: '[Yesterday]',
-          lastWeek: '[Last] dddd',
-          sameElse: 'MMM Do YYYY'
-        })}
-      </p>
-      {this.state.featuredImage && <img src={'http:'+ this.state.featuredImage.fields.file.url + '?w=300&h=300'} alt={this.state.title} title={this.state.title}/>}
-      <h1>{this.state.title}</h1>
-      <Markdown source={this.state.content} />
+    <div className="body-wrap">
+      <div className="Blog-post">
+        {/* Image */}  
+        {this.state.featuredImage && <div className='img-wrap'><img src={'http:'+ this.state.featuredImage.fields.file.url + '?w=800&h=400'} alt={this.state.title} title={this.state.title}/></div>}
+        {/* Title */}  
+        <h1>{this.state.title}</h1>
+        {/* Article */}
+        <Markdown source={this.state.content} />
+        {/* Link Back to blog */}  
+        <Link to="/blog">Back to Blog</Link>
+      </div>
+    </div>
+   
     </>
   );
 

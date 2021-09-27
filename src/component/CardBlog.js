@@ -5,12 +5,18 @@ import moment from 'moment'
 
 const CardBlog = (props) => {
   let match = useRouteMatch();
-  let maxCharInPreview = 36;
+
+  // REMOVE
+  console.log(props)
+  
   return (
     <>
       <div className='blogpost-preview'>
         <div className="blogpost-preview-content">
-          <h2>{props.title}</h2>
+          <div className="">
+            <h4>{props.category}</h4>
+            <h3>{props.title}</h3>
+          </div>
           <Link
               className="icon-button"
               to={{ pathname: `${match.url}/${props.path}`, ...props }}>

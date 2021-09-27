@@ -1,0 +1,27 @@
+// Intro Blocks
+
+.Title-Para-Img-Block {
+  padding: 64px;
+  margin: 16px 10px;
+
+  @media screen and (max-width: 650px) {
+    padding: 16px;
+  }
+
+  .TPI-Text-Content {
+    width: 60%;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 650px) {
+      width: 92%;
+    }
+  }
+}
+
+.Black-box {
+  box-shadow: 0px 6px 24px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  text-align: left;
+  background-color: #282828;
+  color: white;
+}

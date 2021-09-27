@@ -15,7 +15,6 @@ export default class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
-      
       <Router>
       <Header/> 
         <Switch>
