@@ -27,7 +27,7 @@ class HomeIntro extends React.Component {
 
             <div className='Title-Para-Img-Block Black-box'>
                 <div className="TPI-Text-Content">
-                    <h1>Welcome, Stranger</h1>
+                    <h1>Welcome, friend!</h1>
                     <p>This is Ready For Launch. A brand new show that explores the fascinating world of launching ideas and creating businesses. Your host Ian Black talks with early-stage startup founders and creators about the obstacles that get in the way of getting a project off the ground.</p>
                     <p>Available wherever you listen to your podcasts.</p>
                 </div>
